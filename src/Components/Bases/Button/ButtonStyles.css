@@ -1,0 +1,16 @@
+.button-root {
+  padding: 8px 12px;
+  background-color: var(--primary-color);
+  color: var(--typography-primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button-root:hover {
+  background-color: var(--primary-dark-color);
+}
+
+.button-root:active {
+  background-color: var(--primary-darker-color);
+}
