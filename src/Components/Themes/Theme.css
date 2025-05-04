@@ -1,5 +1,33 @@
 :root {
+  /* Color */
   --primary-color: hsl(43, 80%, 70%);
+  --common-white-color: hsl(0, 0%, 100%);
+  --common-black-color: hsl(0, 0%, 0%);
+  --typography-primary-color: hsl(240, 10%, 14%);
+  --typography-secondary-color: hsl(240, 4%, 46%);
+
+  /* Font */
+  --heading-1-size: 3rem;
+  --heading-2-size: 2.25rem;
+  --heading-3-size: 2rem;
+  --subtitle-2-size: 1.25rem;
+  --subtitle-1-size: 1.125rem;
+  --body-1-size: 1rem;
+  --body-2-size: 0.875rem;
+  --caption-aize: 0.875rem;
+
+  /* Font Weight */
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+}
+
+#root {
+  color: var(--typography-primary-color);
+  font-size: var(--body-1-size);
+  font-weight: var(--weight-regular);
+  line-height: 1.42;
 }
 
 /* Flex */
