@@ -1,0 +1,12 @@
+.textField-root {
+  padding: 8px 12px;
+  color: var(--typography-primary-color);
+  background-color: var(--common-white-color);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-width: 200px;
+}
+
+.textField-root:hover {
+  border-color: var(--primary-color);
+}
