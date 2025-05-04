@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Appbar from "./Components/Appbar";
 
-import "./App.css";
 import "./BaselineStyles.css";
 import "./Components/Themes/Theme.css";
 
