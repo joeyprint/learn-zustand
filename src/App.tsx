@@ -4,19 +4,14 @@ import { TextField } from "./Components/Bases/Inputs";
 
 import "./BaselineStyles.css";
 import "./Components/Themes/Theme.css";
+import ReactTodo from "./Pages/ReactTodo";
 
 function App() {
   return (
     <>
       <Appbar />
       <Toolbar />
-      <div className="flex flex-direction-column justify-content-start align-items-center">
-        <div className="flex align-items-center">
-          <TextField />
-          <button>Submit</button>
-        </div>
-        <p>Todo List</p>
-      </div>
+      <ReactTodo />
     </>
   );
 }

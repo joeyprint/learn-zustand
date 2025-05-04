@@ -6,16 +6,18 @@ export type Todo = {
   completed: boolean;
 };
 
-type TodoContextType = {
+type ReactTodoContextType = {
   todos: Todo[];
   addTodo: (text: string) => void;
   toggleTodo: (id: number) => void;
   removeTodo: (id: number) => void;
 };
 
-const TodoListContext = createContext<TodoContextType | undefined>(undefined);
+const ReactTodoListContext = createContext<ReactTodoContextType | undefined>(
+  undefined
+);
 
-const TodoListProvider = ({ children }: { children: ReactNode }) => {
+const ReactTodoListProvider = ({ children }: { children: ReactNode }) => {
   const [todos, setTodos] = useState<Todo[]>([]);
 
   const addTodo = (text: string) => {
@@ -40,21 +42,21 @@ const TodoListProvider = ({ children }: { children: ReactNode }) => {
   };
 
   return (
-    <TodoListContext.Provider
+    <ReactTodoListContext.Provider
       value={{ todos, addTodo, toggleTodo, removeTodo }}
     >
       {children}
-    </TodoListContext.Provider>
+    </ReactTodoListContext.Provider>
   );
 };
 
-const useTodoList = () => {
-  const context = useContext(TodoListContext);
+const useReactTodoList = () => {
+  const context = useContext(ReactTodoListContext);
   if (!context) {
     throw new Error("useTodoList must be used within a TodoListProvider");
   }
   return context;
 };
 
-export { useTodoList };
-export default TodoListProvider;
+export { useReactTodoList };
+export default ReactTodoListProvider;
