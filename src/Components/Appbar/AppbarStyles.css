@@ -6,13 +6,19 @@
   right: 0;
 }
 
-#appbar .logo {
+.appbar-logo {
   height: 64px;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
 
-#appbar .logo:hover {
+.appbar-logo:hover {
   filter: drop-shadow(0 0 10px var(--primary-color));
+}
+
+.appbar-title {
+  font-size: var(--subtitle-1-size);
+  font-weight: var(--weight-bold);
+  color: var(--typography-primary-color);
 }

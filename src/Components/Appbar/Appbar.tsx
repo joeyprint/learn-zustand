@@ -7,9 +7,13 @@ const Appbar = () => {
       className="flex justify-content-center align-items-center"
     >
       <a href="https://zustand-demo.pmnd.rs/" target="_blank">
-        <img src={"/zustand-logo.png"} className="logo" alt="zustand logo" />
+        <img
+          src={"/zustand-logo.png"}
+          className={"appbar-logo"}
+          alt="zustand logo"
+        />
       </a>
-      <h1>Hi, Zustand</h1>
+      <p className={"appbar-title"}>Hi, Zustand</p>
     </div>
   );
 };
