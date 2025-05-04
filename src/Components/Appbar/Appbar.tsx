@@ -2,10 +2,7 @@ import "./AppbarStyles.css";
 
 const Appbar = () => {
   return (
-    <div
-      id={"appbar"}
-      className="flex justify-content-center align-items-center"
-    >
+    <div className="appbar-root flex justify-content-center align-items-center">
       <a href="https://zustand-demo.pmnd.rs/" target="_blank">
         <img
           src={"/zustand-logo.png"}

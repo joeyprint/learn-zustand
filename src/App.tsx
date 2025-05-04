@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Appbar from "./Components/Appbar";
+import Toolbar from "./Components/ToolBar";
 
 import "./BaselineStyles.css";
 import "./Components/Themes/Theme.css";
@@ -10,6 +11,8 @@ function App() {
   return (
     <>
       <Appbar />
+      <Toolbar />
+
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
