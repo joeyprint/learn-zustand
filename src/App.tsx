@@ -1,18 +1,16 @@
 import { useState } from "react";
+import Appbar from "./Components/Appbar";
+
 import "./App.css";
 import "./BaselineStyles.css";
+import "./Components/Themes/Theme.css";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <div>
-        <a href="https://zustand-demo.pmnd.rs/" target="_blank">
-          <img src={"/zustand-logo.png"} className="logo" alt="zustand logo" />
-        </a>
-      </div>
-      <h1>Hi, Zustand</h1>
+      <Appbar />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
