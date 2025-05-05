@@ -9,6 +9,8 @@ export type Todo = {
 type ZustandTodoStoreType = {
   todos: Todo[];
   addTodo: (text: string) => void;
+  toggleTodo: (id: number) => void;
+  removeTodo: (id: number) => void;
 };
 
 const useZustandTodoList = create<ZustandTodoStoreType>((set) => ({
