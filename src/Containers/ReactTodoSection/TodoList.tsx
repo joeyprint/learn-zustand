@@ -8,11 +8,15 @@ const TodoList = () => {
   }
 
   return (
-    <>
+    <div className={"w-full"}>
       {todos.map((todo) => (
-        <p key={todo.id}>{todo.text}</p>
+        <div className="todoList-item">
+          <p className="todoList-item-message" key={todo.id}>
+            {todo.text}
+          </p>
+        </div>
       ))}
-    </>
+    </div>
   );
 };
 

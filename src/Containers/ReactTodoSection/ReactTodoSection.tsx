@@ -1,15 +1,15 @@
-import Button from "../../Components/Bases/Button";
-import { TextField } from "../../Components/Bases/Inputs";
 import TodoList from "./TodoList";
+import AddTodoFormFields from "./AddTodoFormFields";
+
+import "./ReactTodoSectionStyles.css";
 
 const ReactTodoSection = () => {
   return (
-    <div className="flex flex-direction-column justify-content-start align-items-center">
-      <div className="flex align-items-center">
-        <TextField />
-        <Button>Submit</Button>
+    <div className="flex flex-direction-column justify-content-center align-items-center">
+      <div className="flex flex-direction-column justify-content-center align-items-center todoList-form">
+        <AddTodoFormFields />
+        <TodoList />
       </div>
-      <TodoList />
     </div>
   );
 };
