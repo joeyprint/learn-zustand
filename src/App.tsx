@@ -1,18 +1,12 @@
-import Appbar from "./Components/Appbar";
-import Toolbar from "./Components/ToolBar";
+import { RouterProvider } from "react-router-dom";
+
+import router from "./Pages/Routes";
 
 import "./BaselineStyles.css";
 import "./Components/Themes/Theme.css";
-import ReactTodo from "./Pages/ReactTodo";
 
 function App() {
-  return (
-    <>
-      <Appbar />
-      <Toolbar />
-      <ReactTodo />
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
