@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./AppbarStyles.css";
 
 const Appbar = () => {
@@ -16,12 +17,12 @@ const Appbar = () => {
         </div>
 
         <div className="flex align-items-center">
-          <a href="/" className={"appbar-link"}>
+          <Link to={"/"} className={"appbar-link"}>
             React
-          </a>
-          <a href="/zustand" className={"appbar-link"}>
+          </Link>
+          <Link to="/zustand" className={"appbar-link"}>
             Zustand
-          </a>
+          </Link>
         </div>
       </div>
     </div>

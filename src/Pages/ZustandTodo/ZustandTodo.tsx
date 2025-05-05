@@ -1,5 +1,7 @@
+import ZustandTodoSection from "../../Containers/ZustandTodoSection";
+
 const ZustandTodo = () => {
-  return <p>Zustand Todo</p>;
+  return <ZustandTodoSection />;
 };
 
 export default ZustandTodo;

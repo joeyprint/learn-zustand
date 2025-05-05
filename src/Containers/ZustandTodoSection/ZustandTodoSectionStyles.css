@@ -1,0 +1,20 @@
+.ml-2 {
+  margin-left: calc(var(--spacing) * 2);
+}
+
+.todoList-form {
+  max-width: 450px;
+  width: 100%;
+}
+
+.todoList-item {
+  margin-top: calc(var(--spacing) * 2);
+  background-color: var(--grayscale-100-color);
+  border-radius: calc(var(--radius) * 2);
+  padding: calc(var(--spacing) * 1) calc(var(--spacing) * 3);
+}
+
+.todoList-item-message {
+  margin: calc(var(--spacing) * 0);
+  text-align: center;
+}
