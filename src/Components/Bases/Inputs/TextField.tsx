@@ -6,8 +6,8 @@ type TextFieldProps = {} & React.DetailedHTMLProps<
 >;
 
 const TextField = (props: TextFieldProps) => {
-  const { ...restProps } = props;
-  return <input className={"textField-root"} {...restProps} />;
+  const { className, ...restProps } = props;
+  return <input className={`textField-root ${className}`} {...restProps} />;
 };
 
 export default TextField;

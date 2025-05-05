@@ -20,18 +20,19 @@ const AddTodoFormFields = () => {
   };
 
   return (
-    <div className="flex align-items-center">
-      <form onSubmit={handleSubmit} noValidate>
+    <form onSubmit={handleSubmit} noValidate className={"w-full"}>
+      <div className="flex align-items-center">
         <TextField
           value={newTodo}
           defaultValue={newTodo}
           onChange={handleChange}
+          className={"w-full"}
         />
         <Button className="ml-2" type="submit">
           Submit
         </Button>
-      </form>
-    </div>
+      </div>
+    </form>
   );
 };
 
