@@ -7,6 +7,10 @@
   min-height: 64px;
 }
 
+.appbar-container {
+  padding: calc(var(--spacing) * 0) calc(var(--spacing) * 2);
+}
+
 .appbar-logo {
   height: 48px;
   padding-right: 12px;
@@ -22,4 +26,23 @@
   font-size: var(--subtitle-1-size);
   font-weight: var(--weight-bold);
   color: var(--typography-primary-color);
+}
+
+.appbar-link {
+  color: var(--typography-primary-color);
+  text-decoration: none;
+}
+
+.appbar-link:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.appbar-link {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.appbar-link:nth-child(n) {
+  margin-left: calc(var(--spacing) * 1);
 }
