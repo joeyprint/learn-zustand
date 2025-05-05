@@ -18,10 +18,10 @@ const Appbar = () => {
 
         <div className="flex align-items-center">
           <Link to={"/"} className={"appbar-link"}>
-            React
-          </Link>
-          <Link to="/zustand" className={"appbar-link"}>
             Zustand
+          </Link>
+          <Link to={"/react"} className={"appbar-link"}>
+            React
           </Link>
         </div>
       </div>

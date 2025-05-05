@@ -11,8 +11,8 @@ const routes: RouteObject[] = [
     path: "/",
     element: <BaseLayout />,
     children: [
-      { index: true, element: <ReactTodo /> },
-      { path: "zustand", element: <ZustandTodo /> },
+      { index: true, element: <ZustandTodo /> },
+      { path: "react", element: <ReactTodo /> },
     ],
   },
 ];
