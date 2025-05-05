@@ -38,11 +38,6 @@
   text-decoration: underline;
 }
 
-.appbar-link {
-  color: var(--primary-color);
-  text-decoration: underline;
-}
-
 .appbar-link:nth-child(n) {
   margin-left: calc(var(--spacing) * 1);
 }
