@@ -28,7 +28,7 @@ const AddTodoFormFields = () => {
           onChange={handleChange}
           className={"w-full"}
         />
-        <Button className="ml-2" type="submit">
+        <Button className="ml-2 button-primary" type="submit">
           Submit
         </Button>
       </div>

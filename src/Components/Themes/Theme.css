@@ -3,6 +3,9 @@
   --primary-color: hsl(43, 80%, 70%);
   --primary-dark-color: hsl(43, 66%, 64%);
   --primary-darker-color: hsl(43, 53%, 56%);
+  --danger-color: hsl(0, 79%, 60%);
+  --danger-dark-color: hsl(0, 69%, 53%);
+  --danger-darker-color: hsl(0, 68%, 47%);
   --grayscale-900-color: hsl(222, 8%, 40%);
   --grayscale-700-color: hsl(218, 9%, 53%);
   --grayscale-500-color: hsl(210, 11%, 71%);
