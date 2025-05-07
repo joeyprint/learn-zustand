@@ -16,5 +16,4 @@
 
 .todoList-item-message {
   margin: calc(var(--spacing) * 0);
-  text-align: center;
 }

@@ -1,4 +1,5 @@
 import { useReactTodoList } from "../../Contexts/useReactTodoList";
+import RemoveTodoButton from "./RemoveTodoButton";
 
 const TodoList = () => {
   const { todos } = useReactTodoList();
@@ -10,10 +11,14 @@ const TodoList = () => {
   return (
     <div className={"w-full"}>
       {todos.map((todo) => (
-        <div className="todoList-item">
+        <div
+          className="todoList-item flex justify-content-between align-items-center"
+          key={todo.id}
+        >
           <p className="todoList-item-message" key={todo.id}>
             {todo.text}
           </p>
+          <RemoveTodoButton id={todo.id} />
         </div>
       ))}
     </div>
